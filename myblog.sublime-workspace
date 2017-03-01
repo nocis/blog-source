@@ -1,0 +1,1072 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"b",
+				"background-image"
+			],
+			[
+				"us",
+				"user"
+			],
+			[
+				"re",
+				"require"
+			],
+			[
+				"r",
+				"removeClass"
+			],
+			[
+				"a",
+				"addClass"
+			],
+			[
+				"t",
+				"text"
+			],
+			[
+				"p",
+				"prev"
+			],
+			[
+				"in",
+				"inputMode"
+			],
+			[
+				"c",
+				"cursor"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"al",
+				"align-content"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"onc",
+				"onclick	Attr"
+			],
+			[
+				"blk",
+				"blkB"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"sc",
+				"scropos"
+			],
+			[
+				"s",
+				"scropos"
+			],
+			[
+				"scrollT",
+				"scrollTo"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"w",
+				"window"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"h",
+				"hidden"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"o",
+				"overflow"
+			],
+			[
+				"m",
+				"moven"
+			],
+			[
+				"mov",
+				"moven"
+			],
+			[
+				"mo",
+				"moveable"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"sho",
+				"showMore"
+			],
+			[
+				"for",
+				"form	Tag"
+			],
+			[
+				"S",
+				"StringBuffer"
+			],
+			[
+				"H",
+				"Home02Util"
+			],
+			[
+				"Home",
+				"Home02Util"
+			],
+			[
+				"initC",
+				"initControls"
+			],
+			[
+				"M",
+				"Mesh"
+			],
+			[
+				"plane",
+				"planeGeometry"
+			],
+			[
+				"cas",
+				"castShadow"
+			],
+			[
+				"th",
+				"THREE"
+			],
+			[
+				"cub",
+				"cube"
+			],
+			[
+				"cube",
+				"cubeMaterial"
+			],
+			[
+				"rot",
+				"rotationSpeed"
+			],
+			[
+				"sp",
+				"jumpSphere"
+			],
+			[
+				"initS",
+				"initStats"
+			],
+			[
+				"init",
+				"initShadow"
+			],
+			[
+				"ini",
+				"initThree"
+			],
+			[
+				"three",
+				"threeBegin"
+			],
+			[
+				"rer",
+				"requestAnimationFrame"
+			],
+			[
+				"pl",
+				"plane"
+			],
+			[
+				"pla",
+				"plane"
+			],
+			[
+				"Plan",
+				"planeGeometry"
+			],
+			[
+				"0X",
+				"0xFF0000"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"widt",
+				"width"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"n",
+				"n"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "source/_posts/我的博客.md",
+			"settings":
+			{
+				"buffer_size": 70,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/_posts/hello-world.md",
+			"settings":
+			{
+				"buffer_size": 826,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/F/Sublime Text/Sublime Text Build 3103 x64/Data/Packages/OmniMarkupPreviewer/OmniMarkupPreviewer.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 4655,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/mycpp.sublime-build",
+					""
+				],
+				[
+					"Packages/User/mycpp.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/mycpp.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Mark",
+				"OmniMarkupPreviewer: Preview Current Markup in Browser"
+			],
+			[
+				"v",
+				"View: Toggle Menu"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 514.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/myBlog",
+		"/E/myBlog/source",
+		"/E/myBlog/source/_posts"
+	],
+	"file_history":
+	[
+		"/F/Sublime Text/Sublime Text Build 3103 x64/Data/Packages/User/OmniMarkupPreviewer.sublime-settings",
+		"/F/Sublime Text/Sublime Text Build 3103 x64/Data/Packages/OmniMarkupPreviewer/Default (Windows).sublime-keymap",
+		"/F/Sublime Text/Sublime Text Build 3103 x64/Data/Packages/OmniMarkupPreviewer/OmniMarkupPreviewer.sublime-settings",
+		"/E/myBlog/source/_posts/我的博客.md",
+		"/E/myBlog/scaffolds/post.md",
+		"/E/myBlog/source/categories/index.md",
+		"/E/myBlog/source/tags/index.md",
+		"/F/nodejs/todolist/yzy_todolist/public/stylesheets/style.css",
+		"/F/nodejs/todolist/yzy_todolist/user/login.js",
+		"/F/nodejs/todolist/yzy_todolist/views/index.jade",
+		"/F/nodejs/todolist/yzy_todolist/public/javascripts/todolist.js",
+		"/F/nodejs/todolist/yzy_todolist/user/logout.js",
+		"/F/nodejs/todolist/yzy_todolist/lib",
+		"/D/ZM/GRADE3/web/todolist/css/style.css",
+		"/D/ZM/GRADE3/web/todolist/js/todolist.js",
+		"/D/ZM/GRADE3/web/todolist/index.html",
+		"/F/xampp/htdocs/webwork/js/pintu.js",
+		"/D/sb/Starbound/storage/starbound.config",
+		"/D/sb/Starbound/storage/starbound_server.config",
+		"/D/steam/steamapps/workshop/content/431960/821372791/project.json",
+		"/F/xampp/htdocs/webwork/拼图/js/pintu.js",
+		"/F/xampp/htdocs/webwork/照片墙/js/photo-wall.js",
+		"/F/xampp/htdocs/webwork/css/style2.css",
+		"/F/xampp/htdocs/webwork/pintu.html",
+		"/D/steam/steamapps/workshop/content/431960/823262656/project.json",
+		"/C/Users/yzy/Documents/[web2016]HW01_杨震宇_3014218137_v1/照片墙/js/photo-wall.js",
+		"/F/xampp/htdocs/webwork/index.html",
+		"/F/xampp/htdocs/webwork/css/style.css",
+		"/F/xampp/htdocs/webwork/js/photo-wall.js",
+		"/F/xampp/htdocs/webwork/1.html",
+		"/F/xampp/htdocs/webwork/my-fifteen-puzzle/my-fifteen-puzzle/js/fifteen.js",
+		"/F/xampp/htdocs/webwork/my-fifteen-puzzle/my-fifteen-puzzle/index.html",
+		"/F/xampp/htdocs/webwork/my-fifteen-puzzle/my-fifteen-puzzle/css/style.css",
+		"/F/xampp/htdocs/webwork/migong.html",
+		"/F/xampp/htdocs/webwork/1",
+		"/F/xampp/htdocs/webwork/image-wall/image-wall/index.html",
+		"/E/JAVA/c09/h01/ThreadUtil.java",
+		"/E/JAVA/c10/h01/Test.java",
+		"/E/JAVA/c10/h01/PrimeUtil.java",
+		"/E/JAVA/c09/h01/Test.java",
+		"/E/JAVA/c05/h01/StrUtil.java",
+		"/E/JAVA/c02/h01/Home02Util.java",
+		"/E/JAVA/c05/h01/Test.java",
+		"/E/JAVA/c08/h01/C08DataUtil.java",
+		"/E/JAVA/c08/h01/C08FileUtil.java",
+		"/E/JAVA/c08/h01/EnumField.java",
+		"/E/JAVA/c08/h01/EnumListOrder.java",
+		"/E/JAVA/c08/h01/Test.java",
+		"/E/JAVA/c02/h02/Test.java",
+		"/E/JAVA/c02/h02/Parent.java",
+		"/E/JAVA/c02/h02/Child.java",
+		"/E/JAVA/c02/h01/Test.java",
+		"/D/魔兽争霸3/Maps/dz/U9_封鬼之邪恶的源头5.4终章修复/scripts/war3map.j",
+		"/H/system/ipc/custom2.c",
+		"/H/system/ipc/custom3.c",
+		"/F/xampp/htdocs/vis/1.html",
+		"/F/xampp/htdocs/vis/3/index.html",
+		"/D/魔兽争霸3/Maps/dz/rpg/C00128688CF45EAB4B7E316E7328070F/units/campaignunitfunc.txt",
+		"/D/魔兽争霸3/Maps/dz/rpg/C00128688CF45EAB4B7E316E7328070F/units/itemdata.slk",
+		"/D/魔兽争霸3/Maps/dz/rpg/C00128688CF45EAB4B7E316E7328070F/units/neutralupgradestrings.txt",
+		"/D/魔兽争霸3/Maps/dz/rpg/C00128688CF45EAB4B7E316E7328070F/units/campaignabilitystrings.txt",
+		"/F/xampp/htdocs/vis/3/1.html",
+		"/C/Users/yzy/Desktop/war3ma2p.j",
+		"/C/Users/yzy/Desktop/计算题.txt",
+		"/D/魔兽争霸3/Maps/dz/war3map.j",
+		"/C/WINDOWS/System32/drivers/etc/hosts",
+		"/D/魔兽争霸3/Maps/dz/U9_封鬼之邪恶的源头5.4终章修复/units/unitbalance.slk",
+		"/D/魔兽争霸3/Maps/dz/U9_封鬼之邪恶的源头5.4终章修复/units/humanunitfunc.txt",
+		"/D/魔兽争霸3/Maps/dz/U9_封鬼之邪恶的源头5.4终章修复/units/itemfunc.txt",
+		"/D/魔兽争霸3/Maps/dz/U9_封鬼之邪恶的源头5.4终章修复/units/abilitydata.slk",
+		"/D/魔兽争霸3/Maps/dz/U9_封鬼之邪恶的源头5.4终章修复/units/abilitybuffdata.slk",
+		"/D/魔兽争霸3/Maps/dz/U9_封鬼之邪恶的源头5.4终章修复/units/humanabilityfunc.txt",
+		"/D/WEBGL/学习/temp.html",
+		"/F/xampp/apache/conf/httpd.conf",
+		"/F/xampp/htdocs/vis/3/d3.min.js",
+		"/D/ZM/GRADE3/visualization/实验3&4/1.html",
+		"/F/xampp/htdocs/vis/vis.html",
+		"/F/xampp/htdocs/vis/3/1/index.html",
+		"/F/xampp/htdocs/vis/3/1/js/plugins.js",
+		"/F/xampp/htdocs/vis/3/1/js/Tooltip.js",
+		"/F/xampp/htdocs/vis/3/1/js/script.js",
+		"/H/system/ipc/myipc.h",
+		"/H/system/ipc/producer.c",
+		"/H/system/ipc/custom1.c",
+		"/D/魔兽争霸3/Maps/dz/U9_封鬼之邪恶的源头5.4终章修复/units/unitabilities.slk",
+		"/D/魔兽争霸3/Maps/dz/U9_封鬼之邪恶的源头5.4终章修复/units/itemdata.slk",
+		"/D/魔兽争霸3/Maps/dz/U9_封鬼之邪恶的源头5.4终章修复/units/unitdata.slk",
+		"/D/魔兽争霸3/Maps/dz/rpg/C00128688CF45EAB4B7E316E7328070F/units/itemfunc.txt",
+		"/H/thread1.c",
+		"/D/魔兽争霸3/Maps/dz/rpg/C00128688CF45EAB4B7E316E7328070F/units/abilitybuffdata.slk",
+		"/D/WEBGL/新建文件夹/初级教程r73/初级教程r73/chapter4/4-1.html",
+		"/D/WEBGL/学习/examples/work/chapter-09/02-selecting-objects.html",
+		"/D/WEBGL/学习/examples/work/chapter-09/08-controls-orbit.html",
+		"/D/WEBGL/学习/examples/work/chapter-01/03-materials-light.html",
+		"/D/WEBGL/学习/examples/场景.html",
+		"/D/WEBGL/学习/examples/work/chapter-02/05-custom-geometry.html",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/yzy/Desktop/myTetris/src/myTetris/model/Block.java",
+		"/C/Users/yzy/Desktop/AbilityData.slk",
+		"/C/Users/yzy/Desktop/war3map.j",
+		"/C/Users/yzy/Desktop/myTetris/src/myTetris/model/BlockBuilder.java",
+		"/C/Users/yzy/Desktop/myTetris/src/myTetris/view/ControlPanel.java",
+		"/C/Users/yzy/Desktop/myTetris/src/myTetris/model/GameCanvas.java",
+		"/C/Users/yzy/Desktop/myTetris/src/myTetris/listener/BlockListener.java",
+		"/C/Users/yzy/Desktop/myTetris/src/myTetris/controller/Controller.java",
+		"/C/Users/yzy/Desktop/myTetris/src/myTetris/test/test.java",
+		"/D/WEBGL/学习/examples/geometry.html",
+		"/C/Users/yzy/Desktop/Black32.blp",
+		"/C/Users/yzy/Desktop/Hero_BloodElf.blp",
+		"/C/Users/yzy/Desktop/BlueSqGlow.blp",
+		"/E/Minecraft 1.7.10 女仆小型整合包（附官方开服器）/Minecraft 1.7.10 女仆小型整合包（附官方开服器）/（开服器）官方服务端/commands.yml",
+		"/E/Minecraft 1.7.10 女仆小型整合包（附官方开服器）/Minecraft 1.7.10 女仆小型整合包（附官方开服器）/（开服器）官方服务端/help.yml",
+		"/E/yzy/mcserver/server.properties",
+		"/E/yzy/mcserver/plugins/Essentials/config.yml",
+		"/E/Minecraft 1.7.10 女仆小型整合包（附官方开服器）/Minecraft 1.7.10 女仆小型整合包（附官方开服器）/（开服器）官方服务端/server.properties",
+		"/E/Minecraft 1.7.10 女仆小型整合包（附官方开服器）/Minecraft 1.7.10 女仆小型整合包（附官方开服器）/（开服器）官方服务端/plugins/Essentials/worth.yml",
+		"/E/Minecraft 1.7.10 女仆小型整合包（附官方开服器）/Minecraft 1.7.10 女仆小型整合包（附官方开服器）/（开服器）官方服务端/cauldron.yml",
+		"/E/Minecraft 1.7.10 基础向小型整合包（附Cauldron开服器+中文输入，Forge10.13.0.1195）/Minecraft 1.7.10 基础向小型整合包（附Cauldron开服器+中文输入，Forge10.13.0.1195）/（开服器）Cauldron服务端/server.properties",
+		"/D/WEBGL/学习/examples/work/chapter-02/01-basic-scene.html",
+		"/D/WEBGL/学习/examples/work/chapter-01/04-materials-light-animation.html",
+		"/D/WEBGL/学习/examples/tem.html",
+		"/D/WEBGL/学习/examples/work/chapter-01/02-first-scene.html",
+		"/D/WEBGL/three.js-master/examples/obj/male02/male02.obj",
+		"/D/WEBGL/three.js-master/examples/webgl_loader_fbx.html",
+		"/D/WEBGL/three.js-master/examples/js/loaders/OBJLoader.js",
+		"/D/WEBGL/sample/233.html",
+		"/D/WEBGL/three.js-master/examples/misc_controls_trackball.html",
+		"/D/WEBGL/sample/js/examples/webgl_loader_obj.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"admin",
+			"alert",
+			"();\n",
+			";\n",
+			"scrollTo",
+			"0",
+			"                $(\".",
+			"();\n",
+			"window",
+			"this",
+			"30px",
+			"y",
+			"%;\n",
+			"box",
+			"shuffle",
+			"files",
+			"FileReader",
+			"change",
+			"#",
+			"value",
+			"too",
+			"shuaguai",
+			"老弟",
+			"udg_YCYXshu2",
+			"随机",
+			"石",
+			"生命",
+			"A0DR",
+			"shuaguai",
+			"n00Z",
+			"Ane2",
+			"n00Z",
+			"I00S",
+			"n00Z",
+			"七夕美女陪练",
+			"n00Z",
+			"tkno",
+			"经验",
+			"经验书",
+			"I041",
+			"七夕",
+			"Trig_wanjia1shuaguai_Actions",
+			"shuaguai",
+			"TriggerRegisterTimerEventPeriodic",
+			"gg_trg_wanjia2shuaguai",
+			"Trig_wanjia2shuaguai_Actions",
+			"udg_WJ1SGS",
+			"Trig_wanjiaxuhuanxuanze1_Conditions",
+			"木",
+			"lumber",
+			"lurmber",
+			"AdjustPlayerStateBJ",
+			"AddHeroXPSwapped",
+			"Player(0)",
+			"lumber",
+			"专属",
+			"GOLD",
+			"LUMBER",
+			"GOLD",
+			"Trig_nanduxuanze_Func004Func001A",
+			"(GetTriggerUnit",
+			"shas",
+			"gg_trg_tingguai1",
+			"InitTrig_tingguai1",
+			"Trig_tingguai1_Actions",
+			"udg_TINGGUAI_TIME_WIN",
+			"tingguai",
+			"Otch",
+			"gg_unit_Otch_0060",
+			"Trig_HERO_choice1_Func007Func001C",
+			"佛",
+			"StartTimerBJ",
+			"udg_DF_LHCQ_time",
+			"LHCQ",
+			"udg_TINGGUAI",
+			"tinggua",
+			"udg_DF_LHCQ_time_N",
+			"gg_trg_LHCQ",
+			"Trig_LHCQ_Conditions",
+			"A0B5",
+			"长拳",
+			"nrac",
+			"udg_TINGGUAI",
+			"Trig_tingguai1_Conditions",
+			"nfac",
+			"神经大仙",
+			"阵",
+			"五行阵",
+			"下一",
+			"下一波",
+			"怪",
+			"斗佛",
+			"Trig_DF_Func003Func001Func001C",
+			"A0B9",
+			"罗汉长拳",
+			"A0B5",
+			"罗汉长拳",
+			"AdjustPlayerStateBJ",
+			"gg_trg_Shouhu",
+			"gg_trg_mingling01",
+			"O9981",
+			"gg_trg_mingling01",
+			"main",
+			"修复",
+			"问号",
+			"英雄",
+			"黑岩",
+			"经验",
+			"修复",
+			"木",
+			"GetPlayerName",
+			"木",
+			"GetTriggerPlayer",
+			"4000",
+			"声望",
+			"修复",
+			"神兽",
+			"渡劫",
+			"渡劫成功",
+			"O00W",
+			"渡劫",
+			"ip",
+			"THREE.Mesh",
+			"Mesh",
+			"plane",
+			"});\n",
+			"begin",
+			"end"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"user",
+			"blk",
+			"."
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "source/_posts/我的博客.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 70,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								70
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Markdown Extended/Syntaxes/Markdown Extended.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "source/_posts/hello-world.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 826,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								532,
+								532
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Markdown Extended/Syntaxes/Markdown Extended.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/F/Sublime Text/Sublime Text Build 3103 x64/Data/Packages/OmniMarkupPreviewer/OmniMarkupPreviewer.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4655,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								484,
+								484
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 32.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/mycpp.sublime-build",
+	"project": "myblog.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 160.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
