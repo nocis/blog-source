@@ -3,16 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Nocis' workshop
+title: Jared Young's Workshop
 subtitle:
 description:
-author: Nocis
-language: en
-timezone: Asia/Shanghai
+keywords:
+author: Jared Young
+language:
+timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://blog.nocis.ink
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -42,7 +43,16 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -63,11 +73,17 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: anatole
+
+archive_generator:
+  per_page: 5  
+  yearly: false
+  monthly: false
+  daily: false
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy: 
+deploy:
   type: git
-  repository: https://github.com/nocis/Nocis.github.io.git
+  repo: git@github.com:nocis/Nocis.github.io.git
   branch: master
