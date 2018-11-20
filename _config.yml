@@ -23,6 +23,8 @@ source_dir: source
 public_dir: public
 tag_dir: tags
 archive_dir: archives
+about_dir: about
+links_dir: links
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang

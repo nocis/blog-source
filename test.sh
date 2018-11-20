@@ -1,0 +1,1 @@
+qqq=`dirname "$0"`

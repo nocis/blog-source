@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Jared Young,nocis@tju.edu.cn"><title>shell-1 · Jared Young's Workshop</title><meta name="description" content="前言shell: 命令解释器  -&amp;gt; os
+shell脚本贯穿于linux服务
+弱类型语言：直接赋值，不用预定义类型，语法宽松
+一、建立一个shell首行：#!/bin/bash 指定命令解释器（sh，bash，awk，tcl，python….)#! 非第一行 则为注释， shell用#为注释"><meta name="keywords" content="Hexo,HTML,CSS,android,Linux"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Jared Young's Workshop</a></h3><div class="description"><p>Nothing lasts forever.</p></div></div></div><ul class="social-links"></ul><div class="footer"><div class="by_farbox"><a href="https://hexo.io/zh-cn/" target="_blank">Proudly published with Hexo&#65281;</a></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">Home</a></li><li><a href="baidu.com">About</a></li><li><a href="/archives">Archive</a></li><li><a href="baidu.com">Links</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div><div class="avatar"><img src="https://avatars2.githubusercontent.com/u/16632027?s=460&amp;v=4"></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>shell-1</a></h3></div><div class="post-content"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>shell: 命令解释器  -&gt; os</p>
+<p>shell脚本贯穿于linux服务</p>
+<p>弱类型语言：直接赋值，不用预定义类型，语法宽松</p>
+<h3 id="一、建立一个shell"><a href="#一、建立一个shell" class="headerlink" title="一、建立一个shell"></a>一、建立一个shell</h3><h5 id="首行：-bin-bash-指定命令解释器（sh，bash，awk，tcl，python…"><a href="#首行：-bin-bash-指定命令解释器（sh，bash，awk，tcl，python…" class="headerlink" title="首行：#!/bin/bash 指定命令解释器（sh，bash，awk，tcl，python….)"></a>首行：#!/bin/bash 指定命令解释器（sh，bash，awk，tcl，python….)</h5><p>#! 非第一行 则为注释， shell用#为注释</p>
+<p>sh ，bash：sh 为bash 的软链接</p>
+<h4 id="注：linux-默认bash，-首行可以不写语言标识语句"><a href="#注：linux-默认bash，-首行可以不写语言标识语句" class="headerlink" title="注：linux 默认bash， 首行可以不写语言标识语句"></a>注：linux 默认bash， 首行可以不写语言标识语句</h4><p>./xx.sh 执行 == bash xx.sh 执行</p>
+<h3 id="二、shell脚本的执行"><a href="#二、shell脚本的执行" class="headerlink" title="二、shell脚本的执行"></a>二、shell脚本的执行</h3><p>shell 非交互运行：</p>
+<ol>
+<li><p>查找环境变量：<strong>全局etc/profile.d/</strong>         <strong>bashrc</strong> </p>
+</li>
+<li><p>非可执行权限：bash xx.sh</p>
+</li>
+<li><p>可执行权限： ./ （chmod 755）</p>
+</li>
+<li><p>source 或 . 执行：类似include， 即将xx.sh加载到父脚本下使用，父脚本可使用xx.sh 的变量和返回值 </p>
+</li>
+</ol>
+<p>控制台窗口是一个shell，运行的脚本也是一个shell</p>
+<p>用source 或.  加载，可以把脚本里的变量 共享给 控制台窗口shell！！</p>
+<h5 id="注：想在一个脚本里调用另一个脚本里的函数和变量-要用-source或-来include-其他脚本！！"><a href="#注：想在一个脚本里调用另一个脚本里的函数和变量-要用-source或-来include-其他脚本！！" class="headerlink" title="注：想在一个脚本里调用另一个脚本里的函数和变量 要用 source或. 来include 其他脚本！！"></a>注：想在一个脚本里调用另一个脚本里的函数和变量 要用 source或. 来include 其他脚本！！</h5><p>$user: 用户名</p>
+<h5 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h5><h5 id="n-3"><a href="#n-3" class="headerlink" title="n = 3"></a>n = 3</h5><h5 id="单引号‘-n’-输出"><a href="#单引号‘-n’-输出" class="headerlink" title="单引号‘$n’ 输出"></a>单引号‘$n’ 输出</h5><h5 id="即为字符串-n"><a href="#即为字符串-n" class="headerlink" title="即为字符串$n"></a>即为字符串$n</h5><h5 id="双引号“-n”输出"><a href="#双引号“-n”输出" class="headerlink" title="双引号“$n”输出"></a>双引号“$n”输出</h5><h5 id="即为数字3"><a href="#即为数字3" class="headerlink" title="即为数字3"></a>即为数字3</h5><h5 id="反引号是命令替换，命令替换是指Shell可以先执行反引号内的命令，将输出结果暂时保存，在适当的地方输出"><a href="#反引号是命令替换，命令替换是指Shell可以先执行反引号内的命令，将输出结果暂时保存，在适当的地方输出" class="headerlink" title="反引号是命令替换，命令替换是指Shell可以先执行反引号内的命令，将输出结果暂时保存，在适当的地方输出"></a>反引号<code></code>是命令替换，命令替换是指Shell可以先执行反引号内的命令，将输出结果暂时保存，在适当的地方输出</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">cat &gt; 1.sh</span><br><span class="line">&gt; bin=`dirname <span class="string">"<span class="variable">$0</span>"</span>`</span><br><span class="line"></span><br><span class="line">bash 1.sh</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$bin</span>   =====&gt;\ (输出为\)</span><br><span class="line"><span class="comment"># 此时的bin为全局变量，不是1.sh中那个被赋值的局部变量</span></span><br><span class="line">. 1.sh</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$bin</span>   =====&gt;.（输出为.）</span><br><span class="line"><span class="comment"># 此时1.sh的内容已经被加载到当前控制台下执行，bin变量被共享</span></span><br><span class="line"><span class="comment"># $0是bash的文件名，在bash中一般使用cd `dirname $0`进入该脚本所在的目录中</span></span><br></pre></td></tr></table></figure>
+<h3 id="三、shell规范"><a href="#三、shell规范" class="headerlink" title="三、shell规范"></a>三、shell规范</h3><ol>
+<li><p>#!/bin/bash</p>
+</li>
+<li><p># Date: 2018-11-20</p>
+</li>
+<li><p># Author:</p>
+</li>
+<li><p># Email:</p>
+</li>
+<li><p># Functions:</p>
+</li>
+<li><p># Version:</p>
+</li>
+</ol>
+<h5 id="注：-vimrc-可配置-制动生成头部信息"><a href="#注：-vimrc-可配置-制动生成头部信息" class="headerlink" title="注：./vimrc 可配置 制动生成头部信息"></a>注：./vimrc 可配置 制动生成头部信息</h5><h3 id="四、变量"><a href="#四、变量" class="headerlink" title="四、变量"></a>四、变量</h3><p>常用全局变量：$USER \$UID \$HOME \$SHELL \$PS1\$PWD</p>
+<p>env, set …. 都可以看到很多</p>
+<p>export 设置环境变量</p>
+<p><strong>export PATH=/app/bin:$PATH</strong></p>
+<p>常放于 /etc/profile</p>
+<p><strong>unset 取消 环境变量 注销前临时生效，除非写到文件里！</strong></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2018-11-20</span><i class="fa fa-tag"></i><a class="tag" href="/tags/shell/" title="shell">shell </a><a class="tag" href="/tags/linux/" title="linux">linux </a></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" href="http://twitter.com/home?status=,http://blog.nocis.ink/2018/11/20/shell-1/,Jared Young's Workshop,shell-1,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="next pagbuttons"><a class="btn" role="navigation" href="/2018/11/20/test/" title="test">next post</a></li></ul></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>
