@@ -1,0 +1,46 @@
+IDA,UNITA,E,W,IDB,UNITB
+0,Director,5,1,1,Director
+0,Director,6,1,2,CEO
+1,Director,5,1,2,CEO
+2,CEO,25,2,3,Business Development Manager
+2,CEO,36,2,4,Business Support Manager
+2,CEO,53,3,5,Business Control Manager
+3,Business Development Manager,150,4,6,Sales Department Leader
+3,Business Development Manager,213,5,7,Product Department Leader
+3,Business Development Manager,298,5,8,12eting Department Leader
+4,Business Support Manager,345,6,9,Project Office Leader
+4,Business Support Manager,123,4,10,Professional Service Leader
+4,Business Support Manager,212,5,11,QA Leader
+4,Business Support Manager,453,7,12,Design Office Leader
+4,Business Support Manager,156,4,13,Technical Support Office Leader
+4,Business Support Manager,278,5,14,Software Development Leader
+5,Business Control Manager,300,5,15,Legal Office Leader
+5,Business Control Manager,78,3,16,Finance Office Leader
+5,Business Control Manager,256,5,17,HR Office Leader
+6,Sales Department Leader,78,3,7,Product Department Leader
+6,Sales Department Leader,145,4,8,12eting Department Leader
+7,Product Department Leader,139,4,8,12eting Department Leader
+9,Project Office Leader,34,2,10,Professional Service Leader
+9,Project Office Leader,134,4,11,QA Leader
+9,Project Office Leader,546,7,12,Design Office Leader
+9,Project Office Leader,23,2,13,Technical Support Office Leader
+9,Project Office Leader,145,4,14,Software Development Leader
+10,Professional Service Leader,256,5,11,QA Leader
+10,Professional Service Leader,222,5,12,Design Office Leader
+10,Professional Service Leader,190,4,12,Design Office Leader
+10,Professional Service Leader,56,3,14,Software Development Leader
+11,QA Leader,78,3,12,Design Office Leader
+11,QA Leader,112,4,13,Technical Support Office Leader
+12,Design Office Leader,98,3,14,Software Development Leader
+15,Legal Office Leader,88,3,16,Finance Office Leader
+15,Legal Office Leader,123,4,17,HR Office Leader
+16,Finance Office Leader,238,5,17,HR Office Leader
+17,HR Office Leader,5,1,7,Product Department Leader
+16,Finance Office Leader,15,2,6,Sales Department Leader
+16,Finance Office Leader,23,2,7,Product Department Leader
+16,Finance Office Leader,54,3,8,12eting Department Leader
+16,Finance Office Leader,18,2,9,Project Office Leader
+16,Finance Office Leader,23,2,11,QA Leader
+16,Finance Office Leader,41,2,13,Technical Support Office Leader
+16,Finance Office Leader,13,2,14,Software Development Leader
+16,Finance Office Leader,27,2,10,Professional Service Leader

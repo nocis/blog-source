@@ -1,0 +1,243 @@
+<!DOCTYPE html>  
+<html>  
+  <head>  
+        <meta charset="utf-8">  
+        <title>testD3-27-textforce.html</title>  
+        <script type="text/javascript" src="d3.v3.min.js"></script>  
+    <style type="text/css"> 
+     #svg{  
+       padding:20px;  
+       margin:0 auto;
+       padding-top:20px;  
+}   
+
+    </style>  
+    </head>  
+    <body>  
+    <div id="svg"></div>
+        <script type="text/javascript">  
+        //(1)链接数组
+        //
+        var links = new Array();
+        var pos = new Array();
+        var nodes = new Array();   
+        var nodes2 = new Array();                 
+        var staff = new Array();
+        var colors1 = [1,4,6,45,54,65,76,643,879,989];
+        var colors2 = new Array();
+
+           d3.csv("1.csv",function(error,data2){
+              if(error){
+                  console.log(error);
+              } else {  //(3)取出其中的数字，和类别名
+                  for(var i=0;i<data2.length;i++){
+                      links[i]={source: data2[i].IDA, ss:data2[i].SA,sunit: data2[i].UNITA, target: data2[i].IDB, st:data2[i].SB,tunit:data2[i].UNITB, weight:data2[i].W, evalue:data2[i].E};
+                     }
+                    
+                    //console.log(links);
+
+                    links.forEach(function(link) { 
+                    //console.log( nodes2[link.source] );
+                    link.source = nodes2[link.source] || (nodes2[link.source] = {name: link.source, pos:  link.sunit});
+                    link.target = nodes2[link.target] || (nodes2[link.target] = {name: link.target, pos:  link.tunit});
+
+                    });
+
+                    
+
+
+
+                     var width = 2500,
+                     height = 1400;
+
+                     var force = d3.layout.force()
+                     .nodes(d3.values(nodes2))
+                     .links(links)
+                     .size([width, height])
+                     .linkDistance(200)
+                     .charge(-14500)
+                     .on("tick", tick)
+                     .start();
+                     //console.log(force.links());
+                     //alert(d3.values(links));
+                     var svg = d3.select("body").select("div").append("svg")
+                     .attr("width", width)
+                     .attr("height", height);
+                
+
+                     var link = svg.selectAll(".link")
+                     .data(force.links())
+                     .enter().append("line")
+                     .attr("class", "link");
+
+                     var colors=d3.scale.category20(); 
+
+                     link.style("stroke",function(d){//  设置线的颜色  
+                         return colors(colors1[d.weight]);  
+                     })  
+                     .style("stroke-width",function(d,i){//设置线的宽度  
+                         return d.weight*1.5;  
+                     });
+
+
+                     var node = svg.selectAll(".node")
+                     .data(force.nodes())
+                     .enter().append("g")
+                     .attr("class", "node")
+                     .on("mouseover", mouseover)
+                     .on("mouseout", mouseout)
+                     .call(force.drag);
+
+                     function  radius (d){ 
+if(!d.weight){//节点weight属性没有值初始化为1（一般就是叶子了）
+d.weight=1;
+}                                              
+  return Math.log(d.weight)*10;                                   
+}                                                                   
+node.append("circle")
+    .attr("r",function(d){  //设置圆点半径                      
+  return radius (d);                          
+ })                                           
+.style("fill",function(d){ //设置圆点的颜色       
+    return colors(d.weight*d.weight*d.weight);
+}) ;
+
+node.append("text")
+    .attr("x", 12)
+    .attr("dy", ".35em")
+    .text(function(d) { return d.name; });
+
+
+
+function mouseover() {
+  d3.select(this).select("circle").transition()
+      .duration(750)
+      .attr("r", function(d){  //设置圆点半径                      
+  return radius (d)+10;                          
+ }) ;
+}
+
+function mouseout() {
+  d3.select(this).select("circle").transition()
+      .duration(750)
+      .attr("r", function(d){  //恢复圆点半径                      
+  return radius (d);                          
+ }) ;
+}
+
+ 
+                     function tick() {//打点更新坐标
+                     link
+                    .attr("x1", function(d) { return d.source.x; })
+                    .attr("y1", function(d) { return d.source.y; })
+                    .attr("x2", function(d) { return d.target.x; })
+                    .attr("y2", function(d) { return d.target.y; });
+
+                     node
+                     .attr("transform", function(d) { 
+                    return "translate(" + d.x + "," + d.y + ")"; 
+                     });
+                     }
+
+/*var force = d3.layout.force()
+    .nodes(d3.values(nodes))
+    .links(links)
+    .size([width, height])
+    .linkDistance(80)
+    .charge(-300)
+    .on("tick", tick)
+    .start();
+//console.log(d3.values(links1));
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+//(3)为链接添加线
+var link = svg.selectAll(".link")
+    .data(force.links())
+    .enter().append("line")
+    .attr("class", "link");
+
+var colors=d3.scale.category20(); 
+   
+link.style("stroke",function(d){//  设置线的颜色  
+    return colors(colors1[d.weight]);  
+})  
+.style("stroke-width",function(d,i){//设置线的宽度  
+    return d.weight;  
+});
+//(4)为链接添加节点
+var node = svg.selectAll(".node")
+    .data(force.nodes())
+  .enter().append("g")
+    .attr("class", "node")
+    .on("mouseover", mouseover)
+    .on("mouseout", mouseout)
+    .call(force.drag);
+
+                                           
+//设置圆点的半径，圆点的度越大weight属性值越大，可以对其做一点数学变换                             
+function  radius (d){ 
+if(!d.weight){//节点weight属性没有值初始化为1（一般就是叶子了）
+d.weight=1;
+}                                              
+  return Math.log(d.weight)*10;                                   
+}                                                                   
+node.append("circle")
+    .attr("r",function(d){  //设置圆点半径                      
+  return radius (d);                          
+ })                                           
+.style("fill",function(d){ //设置圆点的颜色          
+    return colors(d.weight*d.weight*d.weight);
+}) ;
+
+node.append("text")
+    .attr("x", 12)
+    .attr("dy", ".35em")
+    .text(function(d) { return d.name; });
+
+
+
+function mouseover() {
+  d3.select(this).select("circle").transition()
+      .duration(750)
+      .attr("r", function(d){  //设置圆点半径                      
+  return radius (d)+10;                          
+ }) ;
+}
+
+function mouseout() {
+  d3.select(this).select("circle").transition()
+      .duration(750)
+      .attr("r", function(d){  //恢复圆点半径                      
+  return radius (d);                          
+ }) ;
+}
+
+
+*/
+
+                    
+
+
+
+                     }
+          });
+
+//alert(nodes);
+
+
+
+                                                  
+                                                                  
+//(2)从链接中分离出不同的节点      
+//一个小问题：节点的weight属性怎么产生的？               
+//links.forEach(function(link) {  //思路就是：在连接中遍历链接，节点数组有了这个链接的源节点就把链接指向这个节点。没有的话把链接上的节点加到链接数组指定名称name属性，并把链接指向这个节点
+//alert(1);
+//console.log(nodes);                                  
+ //(nodes[staff.Id] = {name: staff.Name});
+//});
+
+        </script>  
+  
+    </body>  
+</html> 

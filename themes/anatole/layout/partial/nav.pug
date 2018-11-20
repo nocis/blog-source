@@ -19,7 +19,13 @@
       if is_current('links')
         a.current(href="baidu.com")= __('Links')					
       else
-        a(href="baidu.com")= __('Links')		
+        a(href="baidu.com")= __('Links')
+
+    li
+      if is_current('vis')
+        a.current(href="/vis/temp.html")= __('vis')				
+      else
+        a(href="/vis/temp.html")= __('vis')		
   .information
     .back_btn
       li

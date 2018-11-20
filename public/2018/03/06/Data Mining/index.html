@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Jared Young,nocis@tju.edu.cn"><title>What is data? · Jared Young's Workshop</title><meta name="description" content="Data Object And Attributeattribute : dimension, feature, variable
+nominal attribute : hair_color 、 marital_status
+binary attribute : bool
+ordinal attr"><meta name="keywords" content="Hexo,HTML,CSS,android,Linux"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Jared Young's Workshop</a></h3><div class="description"><p>Nothing lasts forever.</p></div></div></div><ul class="social-links"></ul><div class="footer"><div class="by_farbox"><a href="https://hexo.io/zh-cn/" target="_blank">Proudly published with Hexo&#65281;</a></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">Home</a></li><li><a href="baidu.com">About</a></li><li><a href="/archives">Archive</a></li><li><a href="baidu.com">Links</a></li><li><a href="/vis/temp.html">vis</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div><div class="avatar"><img src="https://avatars2.githubusercontent.com/u/16632027?s=460&amp;v=4"></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>What is data?</a></h3></div><div class="post-content"><h2 id="Data-Object-And-Attribute"><a href="#Data-Object-And-Attribute" class="headerlink" title="Data Object And Attribute"></a>Data Object And Attribute</h2><p><strong>attribute :</strong> dimension, feature, variable</p>
+<p><strong>nominal attribute :</strong> hair_color 、 marital_status</p>
+<p><strong>binary attribute :</strong> bool</p>
+<p><strong>ordinal attribute :</strong> ranking</p>
+<p><strong>numeric attribute :</strong></p>
+<h2 id="Statistical-Description"><a href="#Statistical-Description" class="headerlink" title="Statistical Description"></a>Statistical Description</h2><p><strong>measure of central tendency :</strong> mean, median, mode, midrange</p>
+<p><strong>measure of Data dissemination :</strong> range, quantile, IQR, boxplot, variance, standard deviation</p>
+<h2 id="Data-Matrix-And-Dissimilarity-Matrix"><a href="#Data-Matrix-And-Dissimilarity-Matrix" class="headerlink" title="Data Matrix And Dissimilarity Matrix"></a>Data Matrix And Dissimilarity Matrix</h2><p><strong>data matrix :</strong><br>$$<br>\left[<br>\begin{matrix}<br>x_{11}&amp;\cdots&amp;x_{1f}&amp;\cdots&amp;x_{1p}\\<br>\cdots&amp;\cdots&amp;\cdots&amp;\cdots&amp;\cdots\\<br>x_{i1}&amp;\cdots&amp;x_{if}&amp;\cdots&amp;x_{ip}\\<br>\cdots&amp;\cdots&amp;\cdots&amp;\cdots&amp;\cdots\\<br>x_{p1}&amp;\cdots&amp;x_{pf}&amp;\cdots&amp;x_{pp}\\<br>\end{matrix}<br>\right]\\<br>(n objs \times p attributes)<br>$$</p>
+<p><strong>Dissimilarity Matrix :</strong><br>$$<br>\left[<br>\begin{matrix}<br>0\\<br>d(2,1)&amp;0\\<br>d(3,1)&amp;d(3,2)&amp;0\\<br>\vdots&amp;\vdots&amp;\vdots\\<br>d(n,1)&amp;d(n,2)&amp;\cdots&amp;\cdots&amp;0\\<br>\end{matrix}<br>\right]\\<br>(n objs \times n objs)<br>$$</p>
+<ol>
+<li><p><strong>nominal attribute </strong></p>
+<p> <strong>mismatch rate :</strong> $d(i,j) = \frac{p - m}{p}$</p>
+<p> p:Total attribute</p>
+<p> m:match attribute</p>
+</li>
+</ol>
+<ol start="2">
+<li><p><strong>binary attribute </strong></p>
+<p> <strong>mismatch rate :</strong> $d(i,j) = \frac{r + s}{q + r + s + t}$</p>
+<p> q:the num of both i’s and j’s attribute whose value equals 1</p>
+<p> t:the num of both i’s and j’s attribute whose value equals 0</p>
+<p> s:the num of attributes whose value equals 0 for i and 1 for j</p>
+<p> r:the num of attributes whose value equals 1 for i and 0 for j</p>
+<p> ignore t: $d(i,j) = \frac{r + s}{q + r + s}$</p>
+<p> <strong>Jaccard coefficient :</strong> $d(i,j) = \frac{q}{q + r + s}$</p>
+</li>
+<li><p><strong>numeric attribute </strong></p>
+<p> <strong>Euclid  distance (2-norm):</strong> $d(i,j) = \sqrt{(x_{i1}-x_{j1})^{2}+(x_{i2}-x_{j2})^{2}+\cdots+(x_{ip}-x_{jp})^{2}}$</p>
+<p> <strong>Manhattan  distance (1-norm):</strong> $d(i,j) = |x_{i1}-x_{j1}|+|x_{i2}-x_{j2}|+\cdots+|x_{ip}-x_{jp}|$</p>
+<p> Euclid and Manhattan’s nature:</p>
+<ol>
+<li>Non-negative $d(i,j) \ge 0$</li>
+<li>$d(i,i) = 0$</li>
+<li>Symmetry $d(i,j) = d(j,i)$</li>
+<li><p>$d(i,j) \le d(i,k) + d(k,j)$</p>
+<p><strong>Minkowski  distance (p-norm):</strong> $d(i,j) = \sqrt[h]{|x_{i1}-x_{j1}|^{h}+|x_{i2}-x_{j2}|^{h}+\cdots+|x_{ip}-x_{jp}|^{h}}$</p>
+<p><strong>Chebyshev  distance ($\infty$-norm):</strong> the maximum of each attribute’s distance $$d(i,j) = \lim_{h \to 0} \left( \sum_{f=1}^p |x_{if}-x_{jf}|^{h}\right)^{\frac{1}{h}} = \max_{f}^{p}|x_{if}-x_{jf}|$$</p>
+</li>
+</ol>
+</li>
+<li><p><strong>ordinal attribute </strong></p>
+<p> mapping [0.0, 1.0]</p>
+</li>
+</ol>
+<ol start="5">
+<li><p><strong>mixed type</strong></p>
+<p> weighted mean</p>
+</li>
+<li><p><strong> cosine similarity</strong></p>
+<p> $$<br> sim(x,y) = \frac{x \cdot y}{||x|| ||y||}\\<br> Tanimoto Distance: sim(x,y) = \frac{x \cdot y}{x \cdot x + y \cdot y - x \cdot y}\\<br> ||x||:Euclid  distance<br> $$</p>
+</li>
+</ol>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2018-03-06</span><i class="fa fa-tag"></i><a class="tag" href="/categories/data-mining/" title="data mining">data mining </a><a class="tag" href="/tags/data-mining/" title="data mining">data mining </a></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" href="http://twitter.com/home?status=,http://blog.nocis.ink/2018/03/06/Data Mining/,Jared Young's Workshop,What is data?,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2018/11/20/TOEFL-writing-01/" title="TOEFL-writing-01">Post Anterior</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2017/03/16/CV_part02_Imageformation/" title="CV_part02_Imageformation">next post</a></li></ul></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script src="/js/mathjax.js"></script></body></html>

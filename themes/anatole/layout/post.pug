@@ -32,3 +32,5 @@ block content
             a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
     if page.comments
         include partial/comments
+    if page.math
+        include partial/mathjax
