@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Jared Young,nocis@tju.edu.cn"><title>ETX4-fs error（已解决） · Jared Young's Workshop</title><meta name="description" content="前言再将ubuntu系统装到另一块完整的硬盘上时，由于某些原因，在重新开机以后会报大量的windows系统盘（sda1）ETX4-error，导致开机检测无法通过
+由此可能会导致以下开机时bug：
+先是：
+ibus 报 fatal 
+在一堆failed之后
+出现大量的
+ETX4-fs error
+结"><meta name="keywords" content="Hexo,HTML,CSS,android,Linux"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Jared Young's Workshop</a></h3><div class="description"><p>Nothing lasts forever.</p></div></div></div><ul class="social-links"></ul><div class="footer"><div class="by_farbox"><a href="https://hexo.io/zh-cn/" target="_blank">Proudly published with Hexo&#65281;</a></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">Home</a></li><li><a href="baidu.com">About</a></li><li><a href="/archives">Archive</a></li><li><a href="baidu.com">Links</a></li><li><a href="/vis/temp.html">vis</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div><div class="avatar"><img src="https://avatars2.githubusercontent.com/u/16632027?s=460&amp;v=4"></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>ETX4-fs error（已解决）</a></h3></div><div class="post-content"><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>再将ubuntu系统装到另一块完整的硬盘上时，由于某些原因，在重新开机以后会报大量的windows系统盘（sda1）ETX4-error，导致开机检测无法通过</p>
+<p>由此可能会导致以下开机时bug：</p>
+<p>先是：</p>
+<p>ibus 报 fatal </p>
+<p>在一堆failed之后</p>
+<p>出现大量的</p>
+<p>ETX4-fs error</p>
+<p>结果：无法开机，system login failed</p>
+<h3 id="一、解决方法"><a href="#一、解决方法" class="headerlink" title="一、解决方法"></a>一、解决方法</h3><p>考虑到ahci会检测全部硬盘文件系统，ide只会检测当前启动分区</p>
+<p>将硬盘从AHCI摸式切换至IDE/compatible, 重启即可！</p>
+<p>验证成功，可以成功开机。</p>
+<p>但此方法又有一点不足之处：切换了硬盘模式以后，导致windows 无法正确开机。</p>
+<p>所以问题的根源还是出在windows上。</p>
+<p>具体细节无法查明，但考虑到windows是在休眠状态挂起中，或者是在快速启动关机挂起中，很有可能因异常关机导致文件系统异常。</p>
+<p>其二、windows之前有一次更新，更新后未经过 ”<strong><em>正常完全的关机</em></strong>“ 步骤，也可能导致文件系统异常</p>
+<h3 id="二、结论"><a href="#二、结论" class="headerlink" title="二、结论"></a>二、结论</h3><p>所以，下次遇到该问题，可以考虑如下步骤解决</p>
+<ol>
+<li>正常启动windows，并正常且彻底的关机</li>
+<li>尝试启动ubuntu系统</li>
+<li>如未成功，尝试修改硬盘模式为IDE/compatible</li>
+</ol>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2018-11-21</span><i class="fa fa-tag"></i><a class="tag" href="/tags/unix-OS-fs-error/" title="unix OS fs-error">unix OS fs-error </a></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" href="http://twitter.com/home?status=,http://blog.nocis.ink/2018/11/21/ubuntu ext4-fs error/,Jared Young's Workshop,ETX4-fs error（已解决）,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2018/11/21/gulp/" title="gulp笔记-基础配置">Post Anterior</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2018/11/21/unix-1/" title="unix-1-进程">next post</a></li></ul></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script src="/js/mathjax.js"></script></body></html>

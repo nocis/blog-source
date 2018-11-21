@@ -80,7 +80,7 @@ pagination_dir: page
 theme: anatole
 
 archive_generator:
-  per_page: 5  
+  per_page: 20  
   yearly: false
   monthly: false
   daily: false
